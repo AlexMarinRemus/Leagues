@@ -6,7 +6,16 @@ import java.util.List;
 import static java.time.chrono.JapaneseEra.values;
 
 public enum Albania1 implements League{
-    PARTIZANI("PARTIZANI");
+    PARTIZANI("PARTIZANI"),
+    EGNATIA("EGNATIA"),
+    TIRANA("TIRANA"),
+    VLLAZNIA("VLLAZNIA"),
+    SKENDERBEU("SKENDERBEU"),
+    DINAMO_CITY("DINAMO CITY"),
+    TEUTA("TEUTA"),
+    LACI("LACI"),
+    ELBASANI("ELBASANI"),
+    BYLIS("BYLIS");
 
     private String name;
 

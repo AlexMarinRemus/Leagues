@@ -1,0 +1,53 @@
+package client.enums.leagues;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public enum Argentina1 implements League{
+    RIVER_PLATE("RIVER PLATE"),
+    BOCA_JUNIORS("BOCA JUNIORS"),
+    RACING_CLUB("RACING CLUB"),
+    TALLERES("TALLERES"),
+    ARGENTINOS_JUNIORS("ARGENTINOS JUNIORS"),
+    SAN_LORENZO_DE_ALMAGRO("SAN LORENZO DE ALMAGRO"),
+    VELEZ_SARSFIELD("VELEZ SARSFIELD"),
+    ROSARIO_CENTRAL("ROSARIO CENTRAL"),
+    ESTUDIANTES_DE_LA_PLATA("ESTUDIANTES DE LA PLATA"),
+    ATLETICO_BELGRANO("ATLETICO BELGRANO"),
+    DEFENSA_Y_JUSTICIA("DEFENSA Y JUSTICIA"),
+    HURACAN("HURACAN"),
+    NEWELLS_OLD_BOYS("NEWELL'S OLD BOYS"),
+    INDEPENDIENTE("INDEPENDIENTE"),
+    ATLETICO_LANUS("ATLETICO LANUS"),
+    GODOY_CRUZ_ANTONIO_TOMBA("GODOY CRUZ ANTONIO TOMBA"),
+    ATLETICO_TUCUMAN("ATLETICO_TUCUMAN"),
+    BANFIELD("BANFIELD"),
+    UNION_SANTA_FE ("UNION (SANTA FE)"),
+    INSTITUTO_ACC("INSTITUTO ACC"),
+    GIMNASIA_Y_ESGRIMA_LA_PLATA("GIMNASIA Y ESGRIMA LA PLATA"),
+    ATLETICO_PLATENSE("ATLETICO PLATENSE"),
+    BARRACAS_CENTRAL("BARRACAS CENTRAL"),
+    ATLETICO_TIGRE("ATLETICO TIGRE"),
+    INDEPENDIENTE_RIVADAVIA("INDEPENDIENTE RIVADAVIA"),
+    SARMIENTO_JUNIN("SARMIENTO (JUNIN)"),
+    CENTRAL_CORDOBA_SDE("CENTRAL CORDOBA (SDE)"),
+    DEPORTIVO_RIESTRA("DEPORTIVA RIESTRA");
+
+    private String name;
+
+    Argentina1(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public static List<League> getClubs() {
+        List<League> clubs = new ArrayList<>();
+        for(Argentina1 club : values()){
+            clubs.add(club);
+        }
+        return clubs;
+    }
+}
